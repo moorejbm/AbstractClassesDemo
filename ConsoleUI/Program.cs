@@ -39,7 +39,7 @@ namespace ConsoleUI
              * - new it up as one of each derived class
              * Set the properties with object initializer syntax
              */
-           var focus = new Car() { HasTrunk = true, Make = Ford, Model = Focus, Year = 2013 };
+           var focus = new Car() { HasTrunk = true, Make = "Ford", Model = "Focus", Year = 2013 };
            var  motorcycle = new Motorcycle() { HaHasSideCart = true, Make = "HD", Model = "Chopper", Year = 2021 };
 
             Vehicle sedan = new Car() { HasTrunk = true, Make = "Dodge", Model = "Charger", Year = 2020 };
@@ -58,7 +58,8 @@ namespace ConsoleUI
             foreach (var veh in vehicles)
             {
                 Console.WriteLine($"Make {veh.Make} Model {veh.Model} Year {veh.Year}");
-                veh.DriveAbstract();
+                veh.DriveVirtual();
+                Console.WriteLine("----------------------");
             }
 
 

@@ -13,12 +13,12 @@ namespace ConsoleUI
 
         public override void DriveAbstract()
         {
-            Console.WriteLine("This Motorcycle is in drive")
-
+            Console.WriteLine("This Motorcycle is in drive!");
+        }
             public override void DriveVirtual()
         {
-            Console.WriteLine($"This {GetType().Name} is a{ GetType().BaseType.Name} is virtually in drive");
+            Console.WriteLine($"This {GetType().Name} is a { GetType().BaseType.Name} is virtually in drive");
         }
     }
     }
-}
+
